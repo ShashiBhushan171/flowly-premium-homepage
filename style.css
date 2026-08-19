@@ -1,0 +1,1493 @@
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #f7f8fa;
+
+}
+
+/* Page */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f7f8fa;
+    color: #111111;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    background: rgba(147, 137, 187, 0.986);
+    border-bottom: 1px solid #e5e7eb;
+    /* Keep navbar visible while scrolling */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    /* Slight transparency effect */
+    backdrop-filter: blur(12px);
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111111;
+    text-decoration: none;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a,
+.sign-in {
+    color: #3b3737;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover,
+.sign-in:hover {
+    color: #111111;
+}
+
+/* Right side */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Button */
+.nav-button {
+    padding: 11px 18px;
+
+    background: #111111;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-button:hover {
+    background: #333333;
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    min-height: calc(100vh - 72px);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
+    padding: 78px 6%;
+    max-width: 1500px;
+    margin: 0 auto;
+    /* padding: 70px 5% 40px; */
+
+    align-items: center;
+}
+
+
+/* Hero content */
+
+.hero-content {
+    max-width: 650px;
+}
+
+/* Main heading */
+
+.hero h1 {
+    font-size: clamp(48px, 5vw, 76px);
+    line-height: 1.02;
+    letter-spacing: -3px;
+
+    margin-bottom: 28px;
+}
+
+.hero h1 span {
+    color: #777777;
+}
+
+
+/* Description */
+
+.hero-description {
+    max-width: 550px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #666666;
+
+    margin-bottom: 32px;
+}
+
+
+/* Buttons */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin-bottom: 20px;
+}
+
+.primary-button,
+.secondary-button {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.primary-button {
+    padding: 15px 22px;
+
+    background: #111111;
+    color: white;
+
+    border-radius: 9px;
+}
+
+.primary-button:hover {
+    background: #333333;
+}
+
+
+.secondary-button {
+    color: #333333;
+}
+
+.secondary-button:hover {
+    color: #777777;
+}
+
+
+/* Small note */
+
+.hero-note {
+    color: black;
+    font-size: 13px;
+}
+
+
+/* =========================
+   PRODUCT PREVIEW
+   ========================= */
+
+.hero-product {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Dashboard */
+
+.dashboard {
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    background: rgb(136, 41, 106);
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.08),
+        0 5px 20px rgba(0, 0, 0, 0.04);
+
+    /* transform: rotate(1deg); */
+}
+
+
+/* Dashboard header */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.dashboard-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #dcd9d9;
+}
+
+.dashboard-header h3 {
+    margin-top: 5px;
+
+    font-size: 20px;
+}
+
+
+/* Active status */
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 7px 10px;
+
+    background: #f5f5f5;
+    border-radius: 20px;
+    font-size: 12px;
+    color: black;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #05830b;
+}
+
+
+/* Workflow */
+
+.workflow {
+    padding: 25px 0;
+}
+
+
+/* Workflow step */
+
+.workflow-step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 16px;
+
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+
+    background: #fafafa;
+}
+
+.step-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #111111;
+    color: white;
+
+    border-radius: 9px;
+
+    font-size: 17px;
+}
+
+.workflow-step small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #999999;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.workflow-step strong {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Lines connecting workflow steps */
+
+.connector {
+    width: 1px;
+    height: 25px;
+
+    margin-left: 34px;
+
+    background: #dddddd;
+}
+
+
+/* Dashboard footer */
+
+.dashboard-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    border-top: 1px solid #eeeeee;
+    font-size: 12px;
+    color:black;
+}
+
+.dashboard-footer strong {
+    color:black;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+
+    .navbar {
+        height: auto;
+        min-height: 68px;
+
+        padding: 16px 5%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-actions {
+        gap: 12px;
+    }
+
+    .sign-in {
+        display: none;
+    }
+
+    .nav-button {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 50px;
+        padding: 70px 15% 80px;
+    }
+
+
+    /* Hero text */
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 12vw, 58px);
+        line-height: 1.02;
+        letter-spacing: -2px;
+        margin-bottom: 22px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 28px;
+    }
+
+
+    /* Buttons */
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+
+    /* Product */
+
+    .hero-product {
+        width: 100%;
+    }
+
+    .dashboard {
+        width: 100%;
+
+        padding: 20px;
+
+        transform: none;
+
+        border-radius: 15px;
+    }
+
+
+    /* Workflow */
+
+    .workflow-step {
+        padding: 13px;
+
+        gap: 12px;
+    }
+
+    .step-icon {
+        width: 34px;
+        height: 34px;
+
+        flex-shrink: 0;
+    }
+
+    .workflow-step strong {
+        font-size: 12px;
+    }
+
+    /* Product showcase */
+
+    .product-showcase {
+        padding: 90px 5%;
+    }
+
+    .section-heading {
+        margin-bottom: 45px;
+    }
+
+    .section-heading h2 {
+        font-size: 40px;
+        letter-spacing: -1.5px;
+    }
+
+    .section-heading p {
+        font-size: 15px;
+    }
+
+    .workflow-demo {
+        padding: 20px;
+    }
+
+    .demo-top {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .demo-top h3 {
+        font-size: 17px;
+    }
+
+    .demo-flow {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 12px;
+
+        padding: 25px 0;
+    }
+
+    .demo-card {
+        min-height: auto;
+    }
+
+    .demo-arrow {
+        transform: rotate(90deg);
+
+        align-self: center;
+    }
+
+    .demo-footer {
+        gap: 15px;
+    }
+
+    /* Features */
+
+    /* =========================
+   FEATURES
+   ========================= */
+
+    .features {
+        padding: 130px 6%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+
+    /* Features heading */
+
+    .features-heading {
+        max-width: 650px;
+        margin: 0 auto 65px;
+        text-align: center;
+    }
+
+    .features-heading h2 {
+        margin-bottom: 20px;
+
+        font-size: clamp(38px, 4vw, 58px);
+        line-height: 1.05;
+        letter-spacing: -2px;
+    }
+
+    .features-heading h2 span {
+        color: #777777;
+    }
+
+    .features-heading p {
+        max-width: 550px;
+        margin: 0 auto;
+
+        color: #666666;
+
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+
+    /* Feature layout */
+
+    .feature-grid {
+        display: flex;
+        align-items: stretch;
+
+        gap: 18px;
+
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+
+
+    /* Feature card */
+
+    .feature-card {
+        flex: 1;
+
+        min-height: 330px;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 30px;
+
+        background: #ffffff;
+
+        border: 1px solid #e5e7eb;
+        border-radius: 14px;
+
+        transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
+    }
+
+
+    /* Hover */
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+
+        box-shadow:
+            0 15px 30px rgba(0, 0, 0, 0.08);
+    }
+
+
+    /* Feature icon */
+
+    .feature-icon {
+        width: 38px;
+        height: 38px;
+
+        flex-shrink: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: auto;
+
+        background: #111111;
+
+        color: #ffffff;
+
+        border-radius: 9px;
+
+        font-size: 16px;
+    }
+
+
+    /* Feature title */
+
+    .feature-card h3 {
+        margin-bottom: 12px;
+
+        font-size: 20px;
+        line-height: 1.2;
+
+        letter-spacing: -0.4px;
+    }
+
+
+    /* Feature description */
+
+    .feature-card p {
+        margin-bottom: 25px;
+
+        color: #777777;
+
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* Bottom divider */
+
+    .feature-line {
+        width: 100%;
+        height: 1px;
+
+        margin-bottom: 14px;
+
+        background: #eeeeee;
+    }
+
+
+    /* Number */
+
+    .feature-number {
+        color: #aaaaaa;
+
+        font-size: 11px;
+        font-weight: 700;
+
+        letter-spacing: 1px;
+    }
+
+    /* How it works */
+
+    .how-it-works {
+        padding: 90px 5%;
+    }
+
+    .how-heading {
+        margin-bottom: 45px;
+    }
+
+    .how-heading h2 {
+        font-size: 40px;
+        letter-spacing: -1.5px;
+    }
+
+    .how-heading p {
+        font-size: 15px;
+    }
+
+    .steps {
+        max-width: 100%;
+    }
+
+    .steps::before {
+        left: 24px;
+    }
+
+    .step {
+        grid-template-columns: 50px 1fr;
+
+        gap: 20px;
+
+        padding: 20px 0;
+    }
+
+    .step-number {
+        width: 50px;
+        height: 50px;
+
+        font-size: 11px;
+    }
+
+    .step-content h3 {
+        font-size: 19px;
+    }
+
+    .step-content p {
+        font-size: 14px;
+    }
+
+    /* Final CTA */
+
+    .final-cta {
+        padding: 90px 5%;
+    }
+
+    .final-cta h2 {
+        font-size: 40px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .final-cta p {
+        font-size: 15px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        padding: 45px 5% 25px;
+    }
+
+    .footer-main {
+        flex-direction: column;
+
+        padding-bottom: 35px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-bottom: 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* =========================
+   PRODUCT SHOWCASE
+   ========================= */
+
+.product-showcase {
+    padding: 40px 6%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* Section heading */
+
+.section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+}
+
+.section-label {
+    margin-bottom: 18px;
+
+    color: #999999;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: clamp(38px, 4vw, 58px);
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.section-heading h2 span {
+    color: #777777;
+}
+
+.section-heading p {
+    max-width: 580px;
+
+    margin: 0 auto;
+
+    color: #666666;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* Workflow demo */
+
+.workflow-demo {
+    max-width: 1150px;
+    margin: -15px auto;
+    padding: 12px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.06);
+}
+
+
+/* Demo header */
+
+.demo-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.demo-label {
+    color: #999999;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.demo-top h3 {
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+.demo-status {
+    padding: 8px 12px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    color:green;
+    font-size: 12px;
+}
+
+
+/* Demo flow */
+
+.demo-flow {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 40px 0;
+}
+
+
+/* Demo cards */
+
+.demo-card {
+    flex: 1;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    min-height: 150px;
+
+    padding: 20px;
+
+    background: #fafafa;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Hover interaction */
+
+.demo-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Icons */
+
+.demo-icon {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #111111;
+
+    color: white;
+
+    font-weight: 700;
+}
+
+
+/* Card text */
+
+.demo-card span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #999999;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.demo-card strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+}
+
+.demo-card p {
+    color: #888888;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* Arrows */
+
+.demo-arrow {
+    flex-shrink: 0;
+
+    color: #aaaaaa;
+
+    font-size: 22px;
+}
+
+
+/* Footer */
+
+.demo-footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eeeeee;
+
+    color: #999999;
+
+    font-size: 12px;
+}
+
+.demo-footer strong {
+    color: #333333;
+}
+
+/* =========================
+   FEATURES
+   ========================= */
+
+.features {
+    padding: 40px 6%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* Heading */
+
+.features-heading {
+    max-width: 650px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+}
+
+.features-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: clamp(38px, 4vw, 58px);
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.features-heading h2 span {
+    color: #777777;
+}
+
+.features-heading p {
+    max-width: 550px;
+
+    margin: 0 auto;
+
+    color: #666666;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* Feature grid */
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+}
+
+
+/* Feature card */
+
+.feature-card {
+    min-height: 350px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Hover */
+
+.feature-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.07);
+}
+
+
+/* Icon */
+
+.feature-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: auto;
+
+    border-radius: 11px;
+
+    background: #111111;
+
+    color: white;
+
+    font-size: 18px;
+}
+
+
+/* Title */
+
+.feature-card h3 {
+    margin-bottom: 14px;
+
+    font-size: 21px;
+
+    letter-spacing: -0.4px;
+}
+
+
+/* Description */
+
+.feature-card p {
+    margin-bottom: 25px;
+
+    color: #777777;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* Divider */
+
+.feature-line {
+    width: 100%;
+
+    height: 1px;
+
+    margin-bottom: 14px;
+
+    background: #eeeeee;
+}
+
+
+/* Number */
+
+.feature-number {
+    color: #aaaaaa;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+/* =========================
+   HOW IT WORKS
+   ========================= */
+
+.how-it-works {
+    padding: 40px 6%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Heading */
+
+.how-heading {
+    max-width: 700px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+}
+
+.how-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: clamp(38px, 4vw, 58px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.how-heading h2 span {
+    color: #777777;
+}
+
+.how-heading p {
+    max-width: 580px;
+
+    margin: 0 auto;
+
+    color: #666666;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* Steps */
+
+.steps {
+    position: relative;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+
+/* Vertical line */
+
+.steps::before {
+    content: "";
+
+    position: absolute;
+
+    left: 29px;
+    top: 30px;
+    bottom: 30px;
+
+    width: 1px;
+
+    background: #dddddd;
+}
+
+
+/* Individual step */
+
+.step {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 60px 1fr;
+
+    gap: 28px;
+
+    padding: 25px 0;
+
+    transition: transform 0.25s ease;
+}
+
+
+/* Step number */
+
+.step-number {
+    position: relative;
+    z-index: 1;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #111111;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* Step content */
+
+.step-content {
+    padding-top: 7px;
+}
+
+.step-content h3 {
+    margin-bottom: 10px;
+
+    font-size: 22px;
+
+    letter-spacing: -0.4px;
+}
+
+.step-content p {
+    max-width: 600px;
+
+    color: #777777;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* Subtle interaction */
+
+.step:hover {
+    transform: translateX(6px);
+}
+
+/* =========================
+   FINAL CTA
+   ========================= */
+
+.final-cta {
+    padding: 40px 6%;
+    margin-top: 30px;
+    background: #111111;
+    color: white;
+}
+
+.cta-content {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.final-cta .section-label {
+    color: #999999;
+}
+
+.final-cta h2 {
+    margin-bottom: 22px;
+
+    font-size: clamp(40px, 5vw, 64px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2.5px;
+}
+
+.final-cta h2 span {
+    color: #888888;
+}
+
+.final-cta p {
+    max-width: 520px;
+
+    margin: 0 auto 32px;
+
+    color: #aaaaaa;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* CTA button */
+
+.cta-button {
+    display: inline-block;
+
+    padding: 15px 24px;
+
+    background: white;
+
+    color: #111111;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+
+    background: #eeeeee;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+    padding: 10px 6% 25px;
+
+    background: #111111;
+
+    color: white;
+
+    border-top: 1px solid #333333;
+}
+
+.footer-main {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 30px;
+
+    padding-bottom: 45px;
+}
+
+.footer-logo {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 24px;
+
+    font-weight: 700;
+}
+
+.footer-main p {
+    max-width: 250px;
+
+    color: #888888;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 28px;
+
+    margin-bottom: 45px;
+}
+
+.footer-links a {
+    color: #999999;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #333333;
+
+    color: #666666;
+
+    font-size: 11px;
+}
