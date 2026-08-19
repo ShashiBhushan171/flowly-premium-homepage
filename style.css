@@ -94,12 +94,10 @@ body {
    ========================= */
 
 .hero {
-    min-height: calc(100vh - 72px);
-
+    min-height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 70px;
-
     padding: 78px 6%;
     max-width: 1500px;
     margin: 0 auto;
@@ -393,7 +391,7 @@ body {
         flex-direction: column;
         align-items: stretch;
         gap: 50px;
-        padding: 70px 15% 80px;
+        padding: 70px 5% 60px;
     }
 
 
