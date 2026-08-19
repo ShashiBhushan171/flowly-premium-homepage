@@ -4,7 +4,7 @@ A premium, responsive landing page for Flowly, a fictional workflow automation p
 
 ## Live Demo
 
-[View Live Demo](YOUR_DEPLOYED_URL)
+[View Live Demo](https://shashibhushan171.github.io/flowly-premium-homepage/L)
 
 ## Overview
 
